@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(331, 47%, 89%);
+  --Rose-30: hsl(328, 35%, 93%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--stone-100);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* padding: 80px 0; */
+  font-family: "Outfit";
+}
+
+.heading {
+  font-family: "Young Serif", sans-serif;
+}
+
+.container {
+  margin: 80px 0;
+  padding: 25px;
+  width: 48%;
+  height: 1500px;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+.sub-container {
+  border-radius: 20px;
+  height: 100vh;
+  /* background-color: var(--stone-900); */
+}
+
+.img-section {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.img-section img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.intro-section h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.intro-section p {
+  font-size: 16px;
+}
+.intro-section .prep-time {
+  background-color: var(--Rose-30);
+  border-radius: 12px;
+  padding: 15px 27px;
+  margin: 20px 0;
+}
+.intro-section .prep-time h6 {
+  color: var(--Rose-800);
+  font-size: 15px;
+  padding-left: 20px;
+}
+.intro-section .prep-time ul {
+  font-size: 15px;
+  padding-left: 20px;
+}
+.intro-section .prep-time ul li {
+  margin: 10px 0;
+  padding-left: 10px;
+}
+.intro-section .prep-time ul li span {
+  font-weight: bold;
+}
+.intro-section .prep-time ul li::marker {
+  color: var(--Rose-800);
+}
+
+.ingredient-section {
+  border-bottom: 2px solid #c2c2c2;
+  padding-bottom: 26px;
+}
+.ingredient-section .heading {
+  color: hsl(14, 45%, 36%);
+}
+.ingredient-section ul {
+  font-size: 15px;
+  padding-left: 20px;
+}
+.ingredient-section ul li {
+  margin: 10px 0;
+  padding-left: 15px;
+}
+.ingredient-section ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.instruction-section {
+  border-bottom: 2px solid #c2c2c2;
+  padding-bottom: 26px;
+}
+.instruction-section .heading {
+  color: hsl(14, 45%, 36%);
+  margin-top: 28px;
+}
+.instruction-section ol {
+  font-size: 15px;
+  padding-left: 20px;
+}
+.instruction-section ol li {
+  margin: 10px 0;
+  padding-left: 15px;
+}
+.instruction-section ol li span {
+  font-weight: bold;
+}
+.instruction-section ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.nutrition-section .heading {
+  color: hsl(14, 45%, 36%);
+  margin-top: 28px;
+}
+.nutrition-section .table {
+  margin-top: 25px;
+}
+.nutrition-section .table .tb-cnt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid #e7e6e6;
+  padding: 15px 20px;
+}
+.nutrition-section .table .tb-cnt .amt {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.nutrition-section .table .carbs {
+  border-bottom: 2px solid #d6d5d5;
+}
+.nutrition-section .table .prot {
+  border-bottom: 2px solid #c9c8c8;
+}
+.nutrition-section .table .fat {
+  border-bottom: none;
+}
+
+.attribution {
+  margin-top: 20px;
+}
+.attribution a {
+  text-decoration: none;
+  color: #7d7c7c;
+  font-weight: bold;
+}
+.attribution .name {
+  color: hsl(14, 45%, 36%);
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 1700px;
+  }
+  .img-section img {
+    width: 100%;
+    height: 200px;
+    border-radius: 0px;
+  }
+  .content-body {
+    padding: 0 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
